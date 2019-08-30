@@ -70,10 +70,10 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "sum(namespace_pod_name_container_name:container_cpu_usage_seconds_total:sum_rate{namespace=\"$namespace\", pod_name=\"$pod\", container_name!=\"POD\"}) by (container_name)",
+          "expr": "sum(container_cpu_usage_seconds_total{namespace=\"$namespace\", pod_name=\"$pod\", container_name!=\"POD\"}) ",
           "format": "time_series",
           "intervalFactor": 2,
-          "legendFormat": "{{container_name}}",
+          "legendFormat": "{{$pod}}",
           "legendLink": null,
           "refId": "A",
           "step": 10
