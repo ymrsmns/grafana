@@ -532,7 +532,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "sum(container_memory_rss{container_name!=""}) / sum(kube_node_status_capacity_memory_bytes)",
+          "expr": "sum(container_memory_rss{container_name!=\"\"}) / sum(kube_node_status_capacity_memory_bytes)",
           "format": "time_series",
           "instant": true,
           "intervalFactor": 2,
