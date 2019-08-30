@@ -1121,7 +1121,7 @@
       "type": "table"
     }
   ],
-  "refresh": "5m",
+  "refresh": "10s",
   "schemaVersion": 18,
   "style": "dark",
   "tags": [
@@ -1216,7 +1216,7 @@
     ]
   },
   "time": {
-    "from": "now-2d",
+    "from": "now-2h",
     "to": "now"
   },
   "timepicker": {
