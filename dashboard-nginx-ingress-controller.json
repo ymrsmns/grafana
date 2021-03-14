@@ -11,7 +11,7 @@
         "type": "dashboard"
       },
       {
-        "datasource": "prometheus",
+        "datasource": "${datasource}",
         "enable": true,
         "expr": "sum(changes(nginx_ingress_controller_config_last_reload_successful_timestamp_seconds{instance!=\"unknown\",controller_class=~\"$controller_class\",namespace=~\"$namespace\"}[30s])) by (controller_class)",
         "hide": false,
@@ -31,7 +31,8 @@
   "editable": true,
   "gnetId": 9614,
   "graphTooltip": 0,
-  "iteration": 1567075899344,
+  "id": 19,
+  "iteration": 1615760398331,
   "links": [],
   "panels": [
     {
@@ -43,7 +44,13 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "prometheus",
+      "datasource": "${datasource}",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "format": "ops",
       "gauge": {
         "maxValue": 100,
@@ -58,10 +65,12 @@
       "mappingType": 1,
       "mappingTypes": [
         {
+          "$$hashKey": "object:1487",
           "name": "value to text",
           "value": 1
         },
         {
+          "$$hashKey": "object:1488",
           "name": "range to text",
           "value": 2
         }
@@ -69,7 +78,6 @@
       "maxDataPoints": 100,
       "nullPointMode": "connected",
       "nullText": null,
-      "options": {},
       "postfix": "",
       "postfixFontSize": "50%",
       "prefix": "",
@@ -103,6 +111,7 @@
       "valueFontSize": "80%",
       "valueMaps": [
         {
+          "$$hashKey": "object:1490",
           "op": "=",
           "text": "N/A",
           "value": "null"
@@ -119,7 +128,13 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "prometheus",
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -140,10 +155,12 @@
       "mappingType": 1,
       "mappingTypes": [
         {
+          "$$hashKey": "object:1499",
           "name": "value to text",
           "value": 1
         },
         {
+          "$$hashKey": "object:1500",
           "name": "range to text",
           "value": 2
         }
@@ -151,7 +168,6 @@
       "maxDataPoints": 100,
       "nullPointMode": "connected",
       "nullText": null,
-      "options": {},
       "postfix": "",
       "postfixFontSize": "50%",
       "prefix": "",
@@ -186,6 +202,7 @@
       "valueFontSize": "80%",
       "valueMaps": [
         {
+          "$$hashKey": "object:1502",
           "op": "=",
           "text": "N/A",
           "value": "null"
@@ -202,7 +219,13 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "prometheus",
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "format": "percentunit",
       "gauge": {
         "maxValue": 100,
@@ -223,10 +246,12 @@
       "mappingType": 1,
       "mappingTypes": [
         {
+          "$$hashKey": "object:1511",
           "name": "value to text",
           "value": 1
         },
         {
+          "$$hashKey": "object:1512",
           "name": "range to text",
           "value": 2
         }
@@ -234,7 +259,6 @@
       "maxDataPoints": 100,
       "nullPointMode": "connected",
       "nullText": null,
-      "options": {},
       "postfix": "",
       "postfixFontSize": "50%",
       "prefix": "",
@@ -268,6 +292,7 @@
       "valueFontSize": "80%",
       "valueMaps": [
         {
+          "$$hashKey": "object:1514",
           "op": "=",
           "text": "N/A",
           "value": "null"
@@ -284,8 +309,14 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "prometheus",
+      "datasource": null,
       "decimals": 0,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -306,10 +337,12 @@
       "mappingType": 1,
       "mappingTypes": [
         {
+          "$$hashKey": "object:1523",
           "name": "value to text",
           "value": 1
         },
         {
+          "$$hashKey": "object:1524",
           "name": "range to text",
           "value": 2
         }
@@ -317,7 +350,6 @@
       "maxDataPoints": 100,
       "nullPointMode": "connected",
       "nullText": null,
-      "options": {},
       "postfix": "",
       "postfixFontSize": "50%",
       "prefix": "",
@@ -352,6 +384,7 @@
       "valueFontSize": "80%",
       "valueMaps": [
         {
+          "$$hashKey": "object:1526",
           "op": "=",
           "text": "N/A",
           "value": "null"
@@ -368,8 +401,14 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "prometheus",
+      "datasource": null,
       "decimals": 0,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -390,10 +429,12 @@
       "mappingType": 1,
       "mappingTypes": [
         {
+          "$$hashKey": "object:1535",
           "name": "value to text",
           "value": 1
         },
         {
+          "$$hashKey": "object:1536",
           "name": "range to text",
           "value": 2
         }
@@ -401,7 +442,6 @@
       "maxDataPoints": 100,
       "nullPointMode": "connected",
       "nullText": null,
-      "options": {},
       "postfix": "",
       "postfixFontSize": "50%",
       "prefix": "",
@@ -436,6 +476,7 @@
       "valueFontSize": "80%",
       "valueMaps": [
         {
+          "$$hashKey": "object:1538",
           "op": "=",
           "text": "N/A",
           "value": "null"
@@ -448,11 +489,18 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "prometheus",
+      "datasource": null,
       "decimals": 2,
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fill": 1,
+      "fillGradient": 0,
       "grid": {},
       "gridPos": {
         "h": 7,
@@ -461,6 +509,7 @@
         "y": 3
       },
       "height": "200px",
+      "hiddenSeries": false,
       "id": 86,
       "isNew": true,
       "legend": {
@@ -483,8 +532,11 @@
       "linewidth": 2,
       "links": [],
       "nullPointMode": "connected",
-      "options": {},
+      "options": {
+        "alertThreshold": true
+      },
       "percentage": false,
+      "pluginVersion": "7.4.3",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -559,11 +611,18 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "prometheus",
+      "datasource": null,
       "decimals": 2,
       "editable": false,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fill": 0,
+      "fillGradient": 0,
       "grid": {},
       "gridPos": {
         "h": 7,
@@ -571,6 +630,7 @@
         "x": 12,
         "y": 3
       },
+      "hiddenSeries": false,
       "id": 87,
       "isNew": true,
       "legend": {
@@ -593,8 +653,11 @@
       "linewidth": 2,
       "links": [],
       "nullPointMode": "connected",
-      "options": {},
+      "options": {
+        "alertThreshold": true
+      },
       "percentage": false,
+      "pluginVersion": "7.4.3",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -662,11 +725,18 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "prometheus",
+      "datasource": null,
       "decimals": 2,
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fill": 1,
+      "fillGradient": 0,
       "grid": {},
       "gridPos": {
         "h": 6,
@@ -675,6 +745,7 @@
         "y": 10
       },
       "height": "200px",
+      "hiddenSeries": false,
       "id": 32,
       "isNew": true,
       "legend": {
@@ -695,8 +766,11 @@
       "linewidth": 2,
       "links": [],
       "nullPointMode": "connected",
-      "options": {},
+      "options": {
+        "alertThreshold": true
+      },
       "percentage": false,
+      "pluginVersion": "7.4.3",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -779,11 +853,18 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "prometheus",
+      "datasource": null,
       "decimals": 2,
       "editable": false,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fill": 0,
+      "fillGradient": 0,
       "grid": {},
       "gridPos": {
         "h": 6,
@@ -791,6 +872,7 @@
         "x": 8,
         "y": 10
       },
+      "hiddenSeries": false,
       "id": 77,
       "isNew": true,
       "legend": {
@@ -811,8 +893,11 @@
       "linewidth": 2,
       "links": [],
       "nullPointMode": "connected",
-      "options": {},
+      "options": {
+        "alertThreshold": true
+      },
       "percentage": false,
+      "pluginVersion": "7.4.3",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -883,11 +968,18 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "prometheus",
+      "datasource": null,
       "decimals": 3,
       "editable": false,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fill": 0,
+      "fillGradient": 0,
       "grid": {},
       "gridPos": {
         "h": 6,
@@ -896,6 +988,7 @@
         "y": 10
       },
       "height": "",
+      "hiddenSeries": false,
       "id": 79,
       "isNew": true,
       "legend": {
@@ -915,8 +1008,11 @@
       "linewidth": 2,
       "links": [],
       "nullPointMode": "connected",
-      "options": {},
+      "options": {
+        "alertThreshold": true
+      },
       "percentage": false,
+      "pluginVersion": "7.4.3",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -987,7 +1083,13 @@
     },
     {
       "columns": [],
-      "datasource": "prometheus",
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fontSize": "100%",
       "gridPos": {
         "h": 8,
@@ -998,7 +1100,6 @@
       "hideTimeOverride": false,
       "id": 75,
       "links": [],
-      "options": {},
       "pageSize": 7,
       "repeat": null,
       "repeatDirection": "h",
@@ -1011,6 +1112,7 @@
       "styles": [
         {
           "alias": "Ingress",
+          "align": "auto",
           "colorMode": null,
           "colors": [
             "rgba(245, 54, 54, 0.9)",
@@ -1028,6 +1130,7 @@
         },
         {
           "alias": "Requests",
+          "align": "auto",
           "colorMode": null,
           "colors": [
             "rgba(245, 54, 54, 0.9)",
@@ -1045,6 +1148,7 @@
         },
         {
           "alias": "Errors",
+          "align": "auto",
           "colorMode": null,
           "colors": [
             "rgba(245, 54, 54, 0.9)",
@@ -1060,6 +1164,7 @@
         },
         {
           "alias": "P50 Latency",
+          "align": "auto",
           "colorMode": null,
           "colors": [
             "rgba(245, 54, 54, 0.9)",
@@ -1076,6 +1181,7 @@
         },
         {
           "alias": "P90 Latency",
+          "align": "auto",
           "colorMode": null,
           "colors": [
             "rgba(245, 54, 54, 0.9)",
@@ -1091,6 +1197,7 @@
         },
         {
           "alias": "P99 Latency",
+          "align": "auto",
           "colorMode": null,
           "colors": [
             "rgba(245, 54, 54, 0.9)",
@@ -1106,6 +1213,7 @@
         },
         {
           "alias": "IN",
+          "align": "auto",
           "colorMode": null,
           "colors": [
             "rgba(245, 54, 54, 0.9)",
@@ -1123,6 +1231,7 @@
         },
         {
           "alias": "",
+          "align": "auto",
           "colorMode": null,
           "colors": [
             "rgba(245, 54, 54, 0.9)",
@@ -1138,6 +1247,7 @@
         },
         {
           "alias": "OUT",
+          "align": "auto",
           "colorMode": null,
           "colors": [
             "rgba(245, 54, 54, 0.9)",
@@ -1203,7 +1313,7 @@
       "timeFrom": null,
       "title": "Ingress Percentile Response Times and Transfer Rates",
       "transform": "table",
-      "type": "table"
+      "type": "table-old"
     },
     {
       "columns": [
@@ -1212,7 +1322,13 @@
           "value": "current"
         }
       ],
-      "datasource": "prometheus",
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fontSize": "100%",
       "gridPos": {
         "h": 8,
@@ -1223,7 +1339,6 @@
       "height": "1024",
       "id": 85,
       "links": [],
-      "options": {},
       "pageSize": 7,
       "scroll": true,
       "showHeader": true,
@@ -1234,12 +1349,14 @@
       "styles": [
         {
           "alias": "Time",
+          "align": "auto",
           "dateFormat": "YYYY-MM-DD HH:mm:ss",
           "pattern": "Time",
           "type": "date"
         },
         {
           "alias": "TTL",
+          "align": "auto",
           "colorMode": "cell",
           "colors": [
             "rgba(245, 54, 54, 0.9)",
@@ -1258,6 +1375,7 @@
         },
         {
           "alias": "",
+          "align": "auto",
           "colorMode": null,
           "colors": [
             "rgba(245, 54, 54, 0.9)",
@@ -1284,11 +1402,11 @@
       ],
       "title": "Ingress Certificate Expiry",
       "transform": "timeseries_aggregations",
-      "type": "table"
+      "type": "table-old"
     }
   ],
   "refresh": "5s",
-  "schemaVersion": 18,
+  "schemaVersion": 27,
   "style": "dark",
   "tags": [
     "nginx"
@@ -1296,13 +1414,38 @@
   "templating": {
     "list": [
       {
+        "current": {
+          "selected": true,
+          "text": "victoriametrics",
+          "value": "victoriametrics"
+        },
+        "description": null,
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "datasource",
+        "options": [],
+        "query": "prometheus",
+        "queryValue": "",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "type": "datasource"
+      },
+      {
         "allValue": ".*",
         "current": {
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "prometheus",
+        "datasource": "${datasource}",
         "definition": "",
+        "description": null,
+        "error": {
+          "message": "Datasource named prometheus was not found"
+        },
         "hide": 0,
         "includeAll": true,
         "label": "Namespace",
@@ -1326,8 +1469,12 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "prometheus",
+        "datasource": "${datasource}",
         "definition": "",
+        "description": null,
+        "error": {
+          "message": "Datasource named prometheus was not found"
+        },
         "hide": 0,
         "includeAll": true,
         "label": "Controller Class",
@@ -1351,8 +1498,12 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "prometheus",
+        "datasource": "${datasource}",
         "definition": "",
+        "description": null,
+        "error": {
+          "message": "Datasource named prometheus was not found"
+        },
         "hide": 0,
         "includeAll": true,
         "label": "Controller",
@@ -1376,8 +1527,12 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "prometheus",
+        "datasource": "${datasource}",
         "definition": "",
+        "description": null,
+        "error": {
+          "message": "Datasource named prometheus was not found"
+        },
         "hide": 0,
         "includeAll": true,
         "label": "Ingress",
@@ -1429,5 +1584,5 @@
   "timezone": "browser",
   "title": "NGINX Ingress controller",
   "uid": "nginx",
-  "version": 1
+  "version": 2
 }
